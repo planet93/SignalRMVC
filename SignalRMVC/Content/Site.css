@@ -1,0 +1,53 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.basic-textarea textarea {
+    height: auto;
+}
+
+.card.chat-room .friend-list li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+    .card.chat-room .friend-list li:last-of-type {
+        border-bottom: none;
+    }
+
+.card.chat-room img.rounded-circle {
+    border-radius: 50%;
+}
+
+.card.chat-room img.avatar {
+    height: 3rem;
+    width: 3rem;
+}
+
+.card.chat-room .text-small {
+    font-size: 0.95rem;
+}
+
+.card.chat-room .text-smaller {
+    font-size: 0.75rem;
+}

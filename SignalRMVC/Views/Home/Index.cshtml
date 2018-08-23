@@ -1,0 +1,76 @@
+﻿
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Чат</title>
+    @Styles.Render("~/Content/css")
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <div class="main">
+            <div class="row ">
+                <div class="col-md-3 col-md-offset-3">
+                    <h2>Комната чата</h2>
+                    <div id="loginBlock">
+                        Input login: <br />
+                        <input id="txtUserName" type="text" />
+                        <button type="button" id="btnLogin" class="btn btn-success" value="Вход">Вход</button>
+                    </div>
+
+                    <div id="chatroom"></div>
+                    
+                    <div id="chatBody">
+                        <div id="header"></div>
+                        <div id="inputForm">
+                            <input type="text" id="message" />
+                            <button type="button" id="sendmessage" class="btn btn-success" value="Send">Отправить</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <input id="hdId" type="hidden" />
+                    <input id="username" type="hidden" />
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="chatusers">
+                            <p><b>Все пользователи</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+
+    <div class="card grey lighten-3 chat-room">
+        <div class="card-body">
+
+            <div class="row px-lg-2 px-2">
+
+
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.3.0.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/util.js"></script>
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+
+</html>
