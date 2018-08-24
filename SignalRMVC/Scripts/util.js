@@ -67,6 +67,7 @@ function AddUser(id, name) {
 
     if (userId != id) {
 
-        $("#chatusers").append('<p id="' + id + '"><b>' + name + '</b></p>');
+        //$("#chatusers").append('<p id="' + id + '"><b>' + name + '</b></p>');
+        $("#chatusers").append('<li class="p-2" id="' + id + '">' + name + '</li>');
     }
 }

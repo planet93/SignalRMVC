@@ -11,59 +11,66 @@
 </head>
 
 <body>
-    <div class="container">
-        
 
-        <div class="main">
-            <div class="row ">
-                <div class="col-md-3 col-md-offset-3">
-                    <h2>Комната чата</h2>
-                    <div id="loginBlock">
-                        Input login: <br />
-                        <input id="txtUserName" type="text" />
-                        <button type="button" id="btnLogin" class="btn btn-success" value="Вход">Вход</button>
-                    </div>
-
-                    <div id="chatroom"></div>
-                    
-                    <div id="chatBody">
-                        <div id="header"></div>
-                        <div id="inputForm">
-                            <input type="text" id="message" />
-                            <button type="button" id="sendmessage" class="btn btn-success" value="Send">Отправить</button>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <input id="hdId" type="hidden" />
-                    <input id="username" type="hidden" />
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div id="chatusers">
-                            <p><b>Все пользователи</b></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
+    <div class="card purple lighten-3 chat-room">
+        <div class="myHeader">
+            <h2>Комната чата</h2>
         </div>
+        
+        <div class="logIn">
+            
+                <div id="loginBlock">
+                    <div class="logName">Введитеваше имя: </div>
+                    <input id="txtUserName" type="text" />
+                    <button type="button" id="btnLogin" class="btn btn-success" value="Вход">Вход</button>
+                </div>
 
-    </div>
+        </div>
+        
+        
+        <input id="hdId" type="hidden" />
+        <input id="username" type="hidden" />
 
-    <div class="card grey lighten-3 chat-room">
         <div class="card-body">
 
-            <div class="row px-lg-2 px-2">
+            <div class="row px-lg-2 px-2" id="chatBody">
 
+                <div class="col-md-2 col-xl-2 px-0 col-md-offset-3">
+                    <h4 class="font-weight-bold mb-3 text-center text-lg-left"><b>Все пользователи</b></h4>
+                    <div class="white z-depth-1 px-3 pt-3 pb-0">
+                        <ul class="list-unstyled friend-list" id="chatusers"></ul>
+                    </div>
+                </div>
+
+
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-xl-8 pl-md-3 px-lg-auto px-0">
+                    <div class="chat-message">
+
+                        <div id="header"></div>
+
+                        <div class="list-unstyled chat" id="chatroom">
+
+                        </div>
+
+                        <div class="white">
+                            <div class="form-group basic-textarea">
+                                <textarea class="form-control pl-2 my-0" id="message" rows="3" placeholder="Type your message here..."></textarea>
+                            </div>
+                        </div>
+                        <button id="sendmessage" type="button" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">Send</button>
+
+                    </div>
+
+                </div>
+                <!-- Grid column -->
 
             </div>
 
         </div>
     </div>
+
     
 
     <script src="~/Scripts/jquery-3.3.1.js"></script>

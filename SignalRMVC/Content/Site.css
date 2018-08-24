@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: #dccedc;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -30,10 +31,14 @@ textarea {
 .card.chat-room .friend-list li {
     border-bottom: 1px solid #e0e0e0;
 }
+.chat-room {
+    
+}
 
-    .card.chat-room .friend-list li:last-of-type {
-        border-bottom: none;
-    }
+
+.card.chat-room .friend-list li:last-of-type {
+    border-bottom: none;
+}
 
 .card.chat-room img.rounded-circle {
     border-radius: 50%;
@@ -50,4 +55,22 @@ textarea {
 
 .card.chat-room .text-smaller {
     font-size: 0.75rem;
+}
+
+.p-2 {
+    font-size: 20px;
+    margin: 10px;
+}
+.chat-message {
+    margin-top: -15px;
+}
+.myHeader {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logIn{
+    text-align:center;
+}
+.logName{
+    left:auto;
 }
