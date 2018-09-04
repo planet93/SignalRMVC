@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRMVC", "SignalRMVC\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentConMvc", "PersistentConMvc\PersistentConMvc.csproj", "{AE845DC1-680C-41BB-BF85-283B71EFDB7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRDraw", "SignalRDraw\SignalRDraw.csproj", "{E4008F10-F1E4-4A8B-8D6B-B25EE4C4FE0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AE845DC1-680C-41BB-BF85-283B71EFDB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE845DC1-680C-41BB-BF85-283B71EFDB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE845DC1-680C-41BB-BF85-283B71EFDB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4008F10-F1E4-4A8B-8D6B-B25EE4C4FE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4008F10-F1E4-4A8B-8D6B-B25EE4C4FE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4008F10-F1E4-4A8B-8D6B-B25EE4C4FE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4008F10-F1E4-4A8B-8D6B-B25EE4C4FE0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
